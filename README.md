@@ -7,3 +7,7 @@ Super simple app, showing a micro C# service using mono, docker, rancher, drone 
 ## About
 
 This is starting out as a quick POC for what complexities might come up.
+
+You can see the service running on https://csharp.classis.io
+
+it's using let's encrypt with lb encryption.
