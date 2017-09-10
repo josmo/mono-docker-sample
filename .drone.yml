@@ -4,7 +4,7 @@ pipeline:
     commands:
       - mcs Program.cs SimpleWebServer.cs -o ${DRONE_REPO_NAME}.exe
   build_dotnet:
-    image: microsoft:dotnet 
+    image: microsoft/dotnet 
     commands:
       - dotnet build -c Release -o out
   publish_mono:
