@@ -7,7 +7,8 @@ namespace SimpleWebServer
     {
     static void Main(string[] args)
     {
-        WebServer ws = new WebServer(SendResponse, "http://+:8080/");
+        var port = Environment.GetEnvironmentVariable("HOST_PORT");
+        WebServer ws = new WebServer(SendResponse, "http://+:" + port + "/");
         ws.Run();
         Console.WriteLine("A simple webserver. Press a key to quit.");
         Console.ReadKey();
